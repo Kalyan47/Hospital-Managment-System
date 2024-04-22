@@ -1,0 +1,38 @@
+body{
+    font-family: Ebrima, sans-serif;
+    font-weight: bold;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+.mynav{
+    margin-right: 0%;
+    padding-right: 0%;
+}
+.nav-link:hover{
+    color:rgb(14, 226, 99);
+    border-bottom:2px solid rgb(1, 179, 75);
+
+}
+footer{
+    background-color: rgb(23, 60, 119);
+    margin-top:auto;
+    
+}
+li{
+    list-style-type:none;
+    color:aliceblue;
+}
+.fa{
+    font-size: 20px;
+    padding: 10px;
+}
+.card:hover{
+    border-color: rgb(49, 64, 161);
+    box-shadow: 10px;
+    
+}
+
+
+
+

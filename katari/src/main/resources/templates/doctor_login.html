@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Insert title here</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+                
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <!--My styles-->
+        <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    
+    <div>
+        <!--navbar section-->
+        <nav class="navbar navbar-expand-sm ">
+            <div class="container-fluid ">
+                  
+                        <!--logo-->
+                            <img style=" height: 100px;height: 100px;" class="navbar-brand" src="./images/OMNI-LOGO.jpg">
+    
+                        <!--toggler Button-->
+                        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                  
+                    <!-- Navbar links -->
+                    
+                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">    
+                        
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item px-3">
+                                    <a class="nav-link active" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link" href="#">About us </a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link" href="#">Doctors</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link">Facilities</a>
+    
+                                </li>
+                                <li class="nav-item dropdown px-3">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        Departments
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item">Cardiology</a>
+                                        <a class="dropdown-item">Dermatology</a>
+                                        <a class="dropdown-item">Ent</a>
+                                        <a class="dropdown-item">General Surgery</a>
+                                        <a class="dropdown-item">Physiotherapy</a>
+                                        <a class="dropdown-item">Orthopedic</a>
+                                        <a class="dropdown-item">Pulmonolgy</a>
+                                        <a class="dropdown-item"></a>
+                                        <a class="dropdown-item"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                    
+                        <div class="appointment">
+                            <ul class="navbar-nav "> 
+                                <li class="nav-item ">
+                                        <a class=" nav-link btn btn-success">LOGIN</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+               
+                </div>                
+            </div>
+        </nav>
+    </div>  
+<div class="container-fluid justify-content-center myform pb-4">
+    <div class="row">
+        <div class="col-lg-3 col-xl-4 col-md-3">
+
+        </div>
+        <div class="col-lg-6 col-sm-12 col-xl-4 col-md-6">
+
+
+            <form action="doctor_index" method="post" >
+                <div class="row">
+                    <center> <h4>Doctor Login</h4></center>
+                </div>
+
+                <div class="form-group">
+                    <label>User Name*</label>
+                    <input type="text" class="form-control"  id="uname" placeholder="Enter User name" name="uname" required>
+
+
+                </div>
+                <div class="form-group">
+                    <label>Password*</label>
+                    <input type="text" class="form-control" id="password" placeholder="Enter mobile name" name="password" required>
+                <div>
+                    <button class="btn btn-success" >Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-3 col-xl-4 col-md-3">
+
+        </div>
+    </div> 
+</div>    
+<footer class="footer">
+    <div class="container-fluid pt-4 pb-3">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 justify-content-center">
+                <img style="height: 200px; width:200px; border-radius: 20px;" src="./images/OMNI-LOGO.jpg">
+
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <ul>
+                   <h3 class="text-success font-weight-bold" >OUR HOSPITALS</h3>
+                    <li>OMNI Hospitals, Kukatpally</li>
+                    <li>UDAI OMNI Hospitals, Chapel Road</li>
+                    <li>OMNI Hospitals, Kothapet</li>
+                    <li>OMNI Hospitals, Vizag</li>
+                    <li>OMNI Hospitals, Kurnool</li>
+                    <li>Giggles by OMNI, Vizag</li>
+                </ul>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <ul>
+                    <li><a  href="">About Us</a></li>
+                    <li><a  href="">Contact Us</a></li>
+                    <li><a  href="">Privacy Policy</a></li>
+                    <li><a  href="">Terms & Condition</a></li>
+                    <li><a  href="">FAQs & Help</a></li>
+                    <div class="row">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+ </footer> 
+</body>
+</html>
